@@ -399,320 +399,339 @@
                 <div class="catalog-page__grid">
                     <div class="catalog-page__sidebar">
                         <div class="filter">
-                            <div class="filter__title">
-                                Подбор параметров
-                            </div>
+                            <div class="filter__scroll">
+                                <div class="filter__title">
+                                    Подбор параметров
+                                </div>
 
-                            <button class="filter__close close-btn">
-                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M17.6569 7.75541L13.4143 11.998L17.6569 16.2407L16.2427 17.6549L12.0001 13.4123L7.75744 17.6549L6.34323 16.2407L10.5859 11.998L6.34323 7.75541L7.75744 6.34119L12.0001 10.5838L16.2427 6.34119L17.6569 7.75541Z" fill="black" />
-                                </svg>
-                            </button>
 
-                            <div class="selected-filters">
-                                <div class="selected-filters__item">
-                                    <span>Производитель Carp Pro</span>
-                                    <button class="selected-filters__remove">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.7713 5.17023L8.94286 7.99866L11.7713 10.8271L10.8285 11.7699L8.00005 8.94147L5.17163 11.7699L4.22882 10.8271L7.05724 7.99866L4.22882 5.17023L5.17163 4.22742L8.00005 7.05585L10.8285 4.22742L11.7713 5.17023Z" fill="white" />
-                                        </svg>
+
+                                <button class="filter__close close-btn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M17.6569 7.75541L13.4143 11.998L17.6569 16.2407L16.2427 17.6549L12.0001 13.4123L7.75744 17.6549L6.34323 16.2407L10.5859 11.998L6.34323 7.75541L7.75744 6.34119L12.0001 10.5838L16.2427 6.34119L17.6569 7.75541Z" fill="black" />
+                                    </svg>
+                                </button>
+
+                                <div class="selected-filters">
+                                    <div class="selected-filters__item">
+                                        <span>Производитель Carp Pro</span>
+                                        <button class="selected-filters__remove">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.7713 5.17023L8.94286 7.99866L11.7713 10.8271L10.8285 11.7699L8.00005 8.94147L5.17163 11.7699L4.22882 10.8271L7.05724 7.99866L4.22882 5.17023L5.17163 4.22742L8.00005 7.05585L10.8285 4.22742L11.7713 5.17023Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="selected-filters__item">
+                                        <span>Вес, 207 г</span>
+                                        <button class="selected-filters__remove">
+                                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M11.7713 5.17023L8.94286 7.99866L11.7713 10.8271L10.8285 11.7699L8.00005 8.94147L5.17163 11.7699L4.22882 10.8271L7.05724 7.99866L4.22882 5.17023L5.17163 4.22742L8.00005 7.05585L10.8285 4.22742L11.7713 5.17023Z" fill="white" />
+                                            </svg>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="filter__groups">
+                                    <div class="filter-group _active">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Цена
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div style="display: block;" class="filter-group__bottom">
+                                            <div class="filter-slider" data-start="1000" data-start2="54163" data-min="0" data-max="54163">
+                                                <div class="filter-slider__inputs">
+                                                    <div class="fg">
+                                                        <input class="range-slider__input1" min="0" max="54163" type="number">
+                                                        <span>От</span>
+                                                    </div>
+                                                    <div class="fg">
+                                                        <input class="range-slider__input2" min="0" max="54163" type="number">
+                                                        <span>До</span>
+                                                    </div>
+                                                </div>
+                                                <div class="filter-slider__item">
+                                                    <div class="range-slider"></div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group _active">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Производитель
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div style="display: block;" class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Shimano (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Carp Pro (30)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Guru (2)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Flagman (160)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>BoyaBy (17)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>BoyaBy (17)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <button class="filter-group__more">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Серия
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Серия (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Вес, гр
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>170 (160)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>179 (17)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>200 (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>207 (30)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>214 (2)</span></label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>214 (2)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                            <button class="filter-group__more">
+                                                Показать все
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Количество подшипников
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Серия (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Нагрузка на фрикцион, кг
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Серия (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Передаточнное число
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Серия (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-group">
+                                        <div class="filter-group__top">
+                                            <div class="filter-group__title">
+                                                Фрикцион
+                                            </div>
+                                            <button class="filter-group__toggle">
+                                                <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
+                                                </svg>
+                                            </button>
+                                        </div>
+
+                                        <div class="filter-group__bottom">
+                                            <div class="filter-group__checkboxes">
+                                                <div class="filter-group__check">
+                                                    <div class="m-check">
+                                                        <input type="checkbox">
+                                                        <label><span>Серия (5)</span></label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="filter__nav _hide-mob">
+                                    <button class="filter__btn btn bg-red">
+                                        Показать
+                                    </button>
+                                    <button class="filter__btn2 btn">
+                                        Сбросить
                                     </button>
                                 </div>
-                                <div class="selected-filters__item">
-                                    <span>Вес, 207 г</span>
-                                    <button class="selected-filters__remove">
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11.7713 5.17023L8.94286 7.99866L11.7713 10.8271L10.8285 11.7699L8.00005 8.94147L5.17163 11.7699L4.22882 10.8271L7.05724 7.99866L4.22882 5.17023L5.17163 4.22742L8.00005 7.05585L10.8285 4.22742L11.7713 5.17023Z" fill="white" />
-                                        </svg>
+                            </div>
+
+
+                            <div class="filter-info">
+                                <div class="filter-info__title">
+                                    Найдено <b>47 моделей</b>
+                                </div>
+                                <div class="filter__nav">
+                                    <button class="filter__btn btn bg-red">
+                                        Показать
+                                    </button>
+                                    <button class="filter__btn2 btn">
+                                        Сбросить
                                     </button>
                                 </div>
-                            </div>
-
-                            <div class="filter__groups">
-                                <div class="filter-group _active">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Цена
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div style="display: block;" class="filter-group__bottom">
-                                        <div class="filter-slider" data-start="1000" data-start2="54163" data-min="0" data-max="54163">
-                                            <div class="filter-slider__inputs">
-                                                <div class="fg">
-                                                    <input class="range-slider__input1" min="0" max="54163" type="number">
-                                                    <span>От</span>
-                                                </div>
-                                                <div class="fg">
-                                                    <input class="range-slider__input2" min="0" max="54163" type="number">
-                                                    <span>До</span>
-                                                </div>
-                                            </div>
-                                            <div class="filter-slider__item">
-                                                <div class="range-slider"></div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Производитель
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Shimano (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Carp Pro (30)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Guru (2)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Flagman (160)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>BoyaBy (17)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>BoyaBy (17)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <button class="filter-group__more">
-                                            Показать все
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Серия
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Серия (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Вес, гр
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>170 (160)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>179 (17)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>200 (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>207 (30)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>214 (2)</span></label>
-                                                </div>
-                                            </div>
-
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>214 (2)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                        <button class="filter-group__more">
-                                            Показать все
-                                        </button>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Количество подшипников
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Серия (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Нагрузка на фрикцион, кг
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Серия (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Передаточнное число
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Серия (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="filter-group">
-                                    <div class="filter-group__top">
-                                        <div class="filter-group__title">
-                                            Фрикцион
-                                        </div>
-                                        <button class="filter-group__toggle">
-                                            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M1.22012 3.22944C1.3611 3.08253 1.55229 3 1.75163 3C1.95098 3 2.14217 3.08253 2.28315 3.22944L6.00454 7.10846L9.72592 3.22944C9.86771 3.08669 10.0576 3.00771 10.2547 3.00949C10.4519 3.01128 10.6404 3.09369 10.7798 3.23899C10.9192 3.38428 10.9983 3.58083 11 3.78629C11.0017 3.99176 10.9259 4.18971 10.789 4.33751L6.53606 8.77056C6.39508 8.91747 6.20389 9 6.00454 9C5.80519 9 5.614 8.91747 5.47302 8.77056L1.22012 4.33751C1.07918 4.19055 1 3.99127 1 3.78347C1 3.57568 1.07918 3.37639 1.22012 3.22944Z" fill="#E22B2B" />
-                                            </svg>
-                                        </button>
-                                    </div>
-
-                                    <div class="filter-group__bottom">
-                                        <div class="filter-group__checkboxes">
-                                            <div class="filter-group__check">
-                                                <div class="m-check">
-                                                    <input type="checkbox">
-                                                    <label><span>Серия (5)</span></label>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="filter__nav">
-                                <button class="filter__btn btn bg-red">
-                                    Показать
-                                </button>
-                                <button class="filter__btn2 btn">
-                                    Сбросить
-                                </button>
                             </div>
                         </div>
                     </div>
@@ -1237,11 +1256,11 @@
 
     </section>
 
-    <div class="up-button" style="position:sticky;left:auto;right:auto">
-        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M58.6666 32.0002C58.6666 17.2722 46.7279 5.3335 31.9999 5.3335C17.2719 5.3335 5.33325 17.2722 5.33325 32.0002C5.33325 46.7282 17.2719 58.6668 31.9999 58.6668C46.7279 58.6668 58.6666 46.7282 58.6666 32.0002ZM22.5866 30.7468C22.212 30.3718 22.0017 29.8635 22.0017 29.3335C22.0017 28.8035 22.212 28.2952 22.5866 27.9202L30.5866 19.9202C30.9616 19.5456 31.4699 19.3353 31.9999 19.3353C32.5299 19.3353 33.0382 19.5456 33.4132 19.9202L41.4132 27.9202C41.6097 28.1033 41.7674 28.3241 41.8767 28.5694C41.986 28.8147 42.0448 29.0796 42.0495 29.3481C42.0542 29.6166 42.0048 29.8834 41.9042 30.1324C41.8037 30.3815 41.6539 30.6077 41.464 30.7976C41.2741 30.9875 41.0479 31.1372 40.7988 31.2378C40.5498 31.3384 40.2831 31.3878 40.0145 31.3831C39.746 31.3783 39.4811 31.3196 39.2358 31.2102C38.9905 31.1009 38.7697 30.9433 38.5866 30.7468L33.9999 26.1602V42.6668C33.9999 43.1973 33.7892 43.706 33.4141 44.081C33.0391 44.4561 32.5303 44.6668 31.9999 44.6668C31.4695 44.6668 30.9608 44.4561 30.5857 44.081C30.2106 43.706 29.9999 43.1973 29.9999 42.6668V26.1602L25.4132 30.7468C25.0382 31.1214 24.5299 31.3317 23.9999 31.3317C23.4699 31.3317 22.9616 31.1214 22.5866 30.7468Z" fill="#140A0A" />
-        </svg>
-    </div>
+    <!--<div class="up-button" style="position:sticky;left:auto;right:auto">-->
+    <!--    <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">-->
+    <!--        <path fill-rule="evenodd" clip-rule="evenodd" d="M58.6666 32.0002C58.6666 17.2722 46.7279 5.3335 31.9999 5.3335C17.2719 5.3335 5.33325 17.2722 5.33325 32.0002C5.33325 46.7282 17.2719 58.6668 31.9999 58.6668C46.7279 58.6668 58.6666 46.7282 58.6666 32.0002ZM22.5866 30.7468C22.212 30.3718 22.0017 29.8635 22.0017 29.3335C22.0017 28.8035 22.212 28.2952 22.5866 27.9202L30.5866 19.9202C30.9616 19.5456 31.4699 19.3353 31.9999 19.3353C32.5299 19.3353 33.0382 19.5456 33.4132 19.9202L41.4132 27.9202C41.6097 28.1033 41.7674 28.3241 41.8767 28.5694C41.986 28.8147 42.0448 29.0796 42.0495 29.3481C42.0542 29.6166 42.0048 29.8834 41.9042 30.1324C41.8037 30.3815 41.6539 30.6077 41.464 30.7976C41.2741 30.9875 41.0479 31.1372 40.7988 31.2378C40.5498 31.3384 40.2831 31.3878 40.0145 31.3831C39.746 31.3783 39.4811 31.3196 39.2358 31.2102C38.9905 31.1009 38.7697 30.9433 38.5866 30.7468L33.9999 26.1602V42.6668C33.9999 43.1973 33.7892 43.706 33.4141 44.081C33.0391 44.4561 32.5303 44.6668 31.9999 44.6668C31.4695 44.6668 30.9608 44.4561 30.5857 44.081C30.2106 43.706 29.9999 43.1973 29.9999 42.6668V26.1602L25.4132 30.7468C25.0382 31.1214 24.5299 31.3317 23.9999 31.3317C23.4699 31.3317 22.9616 31.1214 22.5866 30.7468Z" fill="#140A0A"/>-->
+    <!--    </svg>-->
+    <!--</div>-->
     <footer class="bg-black-1 padding-32-0">
         <div class="container grid flex-md fl-j-stretch space-20 fl-j-space-between-md">
             <div class="flex fl-d-column-xs fl-d-column-sm fl-j-space-between fl-gap-24 fl-gap-100-md fl-gap-200-lg">
@@ -1347,6 +1366,19 @@
                                     </linearGradient>
                                     <clipPath id="clip0_395_365">
                                         <rect width="24" height="24" fill="white" transform="translate(0 0.499512)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                        <a href="">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_1_3285)">
+                                    <path d="M24.2453 6.64145C23.9706 5.6256 23.1781 4.83013 22.1623 4.55843C20.7977 4.03164 7.58112 3.77353 3.74716 4.57353C2.73131 4.84824 1.93584 5.6407 1.66414 6.65654C1.04829 9.35843 1.0015 15.1999 1.67924 17.9622C1.95395 18.9781 2.74641 19.7735 3.76226 20.0452C6.46414 20.6671 19.3094 20.7547 22.1774 20.0452C23.1932 19.7705 23.9887 18.9781 24.2604 17.9622C24.917 15.0188 24.9638 9.53956 24.2453 6.64145Z" fill="#FF0000" />
+                                    <path d="M16.8492 12.3019L10.6907 8.76978V15.8339L16.8492 12.3019Z" fill="white" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_1_3285">
+                                        <rect width="24" height="16.6038" fill="white" transform="translate(1 4)" />
                                     </clipPath>
                                 </defs>
                             </svg>
