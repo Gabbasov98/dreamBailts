@@ -34,7 +34,7 @@ function switchMenu(){
 		document.querySelector('body').classList.add('overflowed');
 		document.querySelector('.overflow-block').classList.add('active');
 	}
-}	
+}
 
 $(window).scroll(function () {
     if ($(this).scrollTop() > 50) {
@@ -85,7 +85,7 @@ $(function() {
 				        renderBullet: function (index, className) {
 				          return '<span class="' + className + '">' + "</span>";
 				        },
-				    }    
+				    }
 				});
 			} else if (_swiper.hasClass('swiper-vendor')) {
 				swipers[`id${id}`] = new Swiper(`[data-id="${id}"]`, {
@@ -111,9 +111,15 @@ $(function() {
 					  }
 				});
 			}else if (_swiper.hasClass('swiper-card')) {
+				console.log($(".swiper-card"))
 				swipers[`id${id}`] = new Swiper(`[data-id="${id}"]`, {
 					slidesPerView: 'auto',
+					navigation: {
+						nextEl: `[data-id="${id}"] ~ .swiper-next`,
+						prevEl: `[data-id="${id}"] ~ .swiper-prev`,
+					},
 				});
+
 			}else if (_swiper.hasClass('mobile-swiper')) {
 				if ($(window).width() <= 743) {
 					swipers[`id${id}`] = new Swiper(`[data-id="${id}"]`, {
@@ -144,7 +150,7 @@ $(function() {
 					},
 					autoplay:true
 				});
-			}				
+			}
 
 		});
 
@@ -171,4 +177,4 @@ $(function() {
 			});
 		});
 	}
-});		
+});

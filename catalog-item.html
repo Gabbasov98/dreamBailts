@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?ver=1">
     <link rel="stylesheet" type="text/css" href="assets/libs/fancybox/fancybox.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/nouislider/nouislider.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/nice-select/nice-select.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 </head>
 
@@ -336,17 +338,61 @@
         </div>
     </header>
 
+    <div class="cart-info _active">
+        <div class="cart-info__top">
+            <div class="text20 bold-text">
+                Товар добавлен в корзину
+            </div>
+        </div>
+        <button class="cart-info__close close-btn">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17.6569 7.75541L13.4143 11.998L17.6569 16.2407L16.2427 17.6549L12.0001 13.4123L7.75744 17.6549L6.34323 16.2407L10.5859 11.998L6.34323 7.75541L7.75744 6.34119L12.0001 10.5838L16.2427 6.34119L17.6569 7.75541Z" fill="black"></path>
+            </svg>
+        </button>
+        <div class="cart-product">
+            <div class="cart-product__img">
+                <img src="assets/img/product.png" alt="">
+            </div>
+            <div class="cart-product__content">
+                <div class="cart-product__title">
+                    Катушка Abu Garcia Carabus AG SX 1000
+                </div>
+                <div class="cart-product__price">
+                    6 917 ₽
+                </div>
+            </div>
+            <button class="cart-product__btn btn bg-red">
+                <span>Показать</span>
+            </button>
+        </div>
+    </div>
+
 
     <section>
         <div class="catalog-item">
             <div class="container">
-                <div class="breadcrumbs">
-                    <a href="" class="breadcrumbs__item">Каталог</a>
-                    <a href="" class="breadcrumbs__item">Приманки</a>
-                    <span class="breadcrumbs__item">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</span>
-                </div>
+                <ul itemscope itemtype="http://schema.org/BreadcrumbList" class="breadcrumbs">
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a href="" itemprop="item">
+                            <span itemprop="name">Каталог</span>
+                        </a>
+                        <meta itemprop="position" content="1" />
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a href="" itemprop="item">
+                            <span itemprop="name">Приманки</span>
+                        </a>
+                        <meta itemprop="position" content="2" />
+                    </li>
+                    <li class="breadcrumbs__item" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                        <a itemprop="item">
+                            <span itemprop="name">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</span>
+                        </a>
+                        <meta itemprop="position" content="3" />
+                    </li>
+                </ul>
 
-                <div class="catalog-item__grid">
+                <div class="catalog-item__grid" itemscope itemtype="http://schema.org/Product">
                     <div class="catalog-item__col">
                         <div class="gallery">
                             <div class="gallery__big swiper mySwiper2">
@@ -354,7 +400,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -362,7 +408,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -370,7 +416,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -378,7 +424,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -386,7 +432,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -394,7 +440,7 @@
                                     <div class="swiper-slide">
                                         <a data-fancybox="gallery" href="assets/img/gallery.png">
                                             <div class="gallery__img">
-                                                <img src="assets/img/gallery.png" />
+                                                <img itemprop="image" src="assets/img/gallery.png" />
                                             </div>
 
                                         </a>
@@ -416,41 +462,44 @@
                                 <div class="swiper-wrapper">
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="gallery__img">
-                                            <img src="assets/img/gallery.png" />
+                                            <img itemprop="image" src="assets/img/gallery.png" />
                                         </div>
 
                                     </div>
                                 </div>
+                            </div>
+                            <div class="product-favourite">
+                                <a href="#" class="star"></a>
                             </div>
                         </div>
                     </div>
@@ -467,10 +516,13 @@
                                     <span class="product-info__item-desc">4 шт.</span>
                                 </div>
                             </div>
-                            <h1 class="product-info__title text28 bold-text">Воблер Waterland Jerk Sonik 55</h1>
-                            <div class="product-info__desc text24">цвет 05 Yamame Gold</div>
-                            <div class="product-info__price h2 txt-red">
+                            <h1 itemprop="name" class="product-info__title text28 bold-text">Воблер Waterland Jerk Sonik 55</h1>
+                            <div itemprop="description" class="product-info__desc text24">цвет 05 Yamame Gold</div>
+                            <div class="product-info__price h2 txt-red" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
                                 1 786 ₽
+                                <meta itemprop="price" content="1786.00">
+                                <meta itemprop="priceCurrency" content="RUB">
+                                <link itemprop="availability" href="http://schema.org/InStock">
                             </div>
                             <div class="colors">
                                 <div class="colors__top">
@@ -783,15 +835,18 @@
                     </a>
                 </div>
                 <div class="swiper swiper-card" data-id="cards">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div itemscope itemtype="http://schema.org/ItemList" class="swiper-wrapper">
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
                                         <a href="#" class="hidden-sm cart relative cart-active">
                                             <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -805,15 +860,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -825,15 +885,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -845,35 +910,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -885,15 +935,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -905,15 +960,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -925,26 +985,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -962,15 +1003,18 @@
                     </a>
                 </div>
                 <div class="swiper swiper-card" data-id="cards">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div itemscope itemtype="http://schema.org/ItemList" class="swiper-wrapper">
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
                                         <a href="#" class="hidden-sm cart relative cart-active">
                                             <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -984,15 +1028,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1004,15 +1053,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1024,35 +1078,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1064,15 +1103,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1084,15 +1128,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1104,26 +1153,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1141,15 +1171,18 @@
                     </a>
                 </div>
                 <div class="swiper swiper-card" data-id="cards">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
+                    <div itemscope itemtype="http://schema.org/ItemList" class="swiper-wrapper">
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
                                         <a href="#" class="hidden-sm cart relative cart-active">
                                             <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -1163,15 +1196,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1183,15 +1221,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1203,35 +1246,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1243,15 +1271,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-2.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Воблер Waterland Jerk Sonik 55 цвет 05 Yamame Gold</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1263,15 +1296,20 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
+
+                        <div itemscope itemprop="itemListElement" itemtype="http://schema.org/Product" class="swiper-slide">
                             <div class="flex fl-d-column fl-a-center">
                                 <a href="#" class="star"></a>
-                                <img class="space-8" src="assets/img/line-1-3.png" alt="Воблер Waterland Jerk Sonik 55">
+                                <img itemprop="image" class="space-8" src="assets/img/line-1-1.png" alt="Воблер Waterland Jerk Sonik 55">
                                 <div class="">
-                                    <p class="txt-small card-title txt-center space-8">Офсетный крючок MORIGEN XB-112 #3/0</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8">836 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
+                                    <meta itemprop="description" content="описание_товара">
+                                    <p itemprop="name" class="txt-small card-title txt-center space-8">Леска LINESYSTEM Iso Hato blue-white #2,5 (150m)</p>
+                                    <div itemscope itemprop="offers" itemtype="http://schema.org/Offer" class="flex-xs fl-j-space-between fl-a-center">
+                                        <p class="h2 txt-center space-8"><span itemprop="price">836</span> ₽</p>
+                                        <meta itemprop="priceCurrency" content="RUB">
+                                        <meta itemprop="availability" content="http://schema.org/InStock" />
+                                        <a href="#" class="hidden-sm cart relative cart-active">
+                                            <span class="cart-counter">1</span>
                                             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
                                             </svg>
@@ -1283,26 +1321,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="swiper-slide">
-                            <div class="flex fl-d-column fl-a-center">
-                                <a href="#" class="star active"></a>
-                                <img class="space-8" src="assets/img/line-1-4.png" alt="Воблер Waterland Jerk Sonik 55">
-                                <div class="">
-                                    <p class="txt-small txt-center card-title space-8">Воблер Little Jack Forma CUTE 1.5g цвет 02</p>
-                                    <div class="flex-xs fl-j-space-between fl-a-center">
-                                        <p class="h2 txt-center space-8 card-price">1 046 ₽</p>
-                                        <a href="#" class="hidden-sm cart cart-active">
-                                            <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M4.5 6.375C4.5 6.07663 4.61853 5.79048 4.8295 5.5795C5.04048 5.36853 5.32663 5.25 5.625 5.25H6.462C7.887 5.25 8.742 6.2085 9.2295 7.0995C9.555 7.6935 9.7905 8.382 9.975 9.006C10.0249 9.00206 10.0749 9.00006 10.125 9H28.872C30.117 9 31.017 10.191 30.675 11.3895L27.933 21.003C27.6872 21.8653 27.167 22.624 26.4514 23.1642C25.7358 23.7044 24.8636 23.9968 23.967 23.997H15.045C14.1412 23.997 13.2625 23.7003 12.5438 23.1523C11.8251 22.6043 11.3062 21.8355 11.067 20.964L9.927 16.806L8.037 10.434L8.0355 10.422C7.8015 9.5715 7.5825 8.775 7.2555 8.181C6.942 7.6035 6.69 7.5 6.4635 7.5H5.625C5.32663 7.5 5.04048 7.38147 4.8295 7.1705C4.61853 6.95952 4.5 6.67337 4.5 6.375ZM14.25 31.5C15.0456 31.5 15.8087 31.1839 16.3713 30.6213C16.9339 30.0587 17.25 29.2956 17.25 28.5C17.25 27.7044 16.9339 26.9413 16.3713 26.3787C15.8087 25.8161 15.0456 25.5 14.25 25.5C13.4544 25.5 12.6913 25.8161 12.1287 26.3787C11.5661 26.9413 11.25 27.7044 11.25 28.5C11.25 29.2956 11.5661 30.0587 12.1287 30.6213C12.6913 31.1839 13.4544 31.5 14.25 31.5ZM24.75 31.5C25.5456 31.5 26.3087 31.1839 26.8713 30.6213C27.4339 30.0587 27.75 29.2956 27.75 28.5C27.75 27.7044 27.4339 26.9413 26.8713 26.3787C26.3087 25.8161 25.5456 25.5 24.75 25.5C23.9544 25.5 23.1913 25.8161 22.6287 26.3787C22.0661 26.9413 21.75 27.7044 21.75 28.5C21.75 29.2956 22.0661 30.0587 22.6287 30.6213C23.1913 31.1839 23.9544 31.5 24.75 31.5Z" fill="#E22B2B" />
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="btn bg-red hidden visible-sm">
-                                            добавить в корзину
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+
                     </div>
                 </div>
             </div>
@@ -1505,6 +1524,8 @@
     </script>
     <script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.3/dist/lazyload.min.js"></script>
     <script src="assets/libs/fancybox/fancybox.umd.js"></script>
+    <script src="assets/libs/nouislider/nouislider.min.js"></script>
+    <script src="assets/libs/nice-select/jquery.nice-select.min.js"></script>
     <script src="assets/js/main.min.js"></script>
 
 </body>
