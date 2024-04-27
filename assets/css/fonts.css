@@ -8,9 +8,17 @@
 }
 @font-face {
     font-family: "Open Sans";
+    src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf);
+    src: url(../fonts/OpenSans/OpenSans-SemiBold.ttf) format("truetype");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: "Open Sans";
     src: url(../fonts/OpenSans/OpenSans-Bold.ttf);
     src: url(../fonts/OpenSans/OpenSans-Bold.ttf) format("truetype");
-    font-weight: 600;
-    font-style: bold;
+    font-weight: 700;
+    font-style: normal;
     font-display: swap;
 }

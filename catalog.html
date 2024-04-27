@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Главная</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/fonts.css">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.min.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css?ver=1">
     <link rel="stylesheet" type="text/css" href="assets/libs/fancybox/fancybox.css">
@@ -109,10 +110,15 @@
                     </div>
                 </div>
                 <a href="/" class="flex logo hidden-md hidden-lg"><img src="assets/img/logo.svg" /></a>
-                <div class="flex fl-j-space-between fl-a-center fl-gap-16 icon-block">
+                <div class="flex fl-j-space-between fl-a-center fl-gap-12 icon-block">
                     <a class="flex hidden-md header-link search-button" href="#">
                         <svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18" fill="none">
                             <path d="M13.6295 11.8024L16.6902 14.863C17.0987 15.2715 17.1053 15.9273 16.6973 16.3352L15.9625 17.0701C15.558 17.4746 14.8989 17.4715 14.4903 17.0629L11.4297 14.0023C10.3002 14.7269 8.95671 15.1471 7.51512 15.1471C3.50594 15.1471 0.255859 11.897 0.255859 7.88783C0.255859 3.87865 3.50594 0.628571 7.51512 0.628571C11.5243 0.628571 14.7744 3.87865 14.7744 7.88783C14.7744 9.32942 14.3542 10.6729 13.6295 11.8024ZM7.51512 13.073C10.3788 13.073 12.7003 10.7515 12.7003 7.88783C12.7003 5.02413 10.3788 2.70264 7.51512 2.70264C4.65142 2.70264 2.32993 5.02413 2.32993 7.88783C2.32993 10.7515 4.65142 13.073 7.51512 13.073Z" fill="#E22B2B" />
+                        </svg>
+                    </a>
+                    <a class="flex hidden-md header-link favourite-icon" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                            <path d="M24.8577 30.7202L24.4288 31.6236L24.8577 30.7202C24.3149 30.4625 23.6851 30.4625 23.1423 30.7202L23.5712 31.6236L23.1423 30.7202L16.9986 33.6365L17.8738 26.8923C17.9511 26.2965 17.7564 25.6975 17.3437 25.261L12.6716 20.3192L19.3561 19.0674C19.9466 18.9568 20.4562 18.5866 20.7438 18.0591L24 12.0886L27.2562 18.0591C27.5438 18.5866 28.0534 18.9568 28.6439 19.0674L35.3284 20.3192L30.6563 25.261C30.2435 25.6975 30.0489 26.2965 30.1262 26.8923L31.0014 33.6365L24.8577 30.7202Z" stroke="#E22B2B" stroke-width="2" />
                         </svg>
                     </a>
                     <a class="flex hidden-md header-link" href="#">
@@ -226,7 +232,17 @@
                         </form>
                     </div>
                 </div>
-                <div class="flex fl-j-space-between fl-a-center fl-gap-48-md">
+                <div class="flex fl-j-space-between fl-a-center fl-gap-32-md">
+                    <a class="flex fl-a-center header-link" href="#">
+                        <div class="flex fl-a-center cart-active relative">
+                            <span class="cart-counter txt-black">1</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 48 48" fill="none">
+                                <path d="M24.8577 30.7202L24.4288 31.6236L24.8577 30.7202C24.3149 30.4625 23.6851 30.4625 23.1423 30.7202L23.5712 31.6236L23.1423 30.7202L16.9986 33.6365L17.8738 26.8923C17.9511 26.2965 17.7564 25.6975 17.3437 25.261L12.6716 20.3192L19.3561 19.0674C19.9466 18.9568 20.4562 18.5866 20.7438 18.0591L24 12.0886L27.2562 18.0591C27.5438 18.5866 28.0534 18.9568 28.6439 19.0674L35.3284 20.3192L30.6563 25.261C30.2435 25.6975 30.0489 26.2965 30.1262 26.8923L31.0014 33.6365L24.8577 30.7202Z" stroke="#E22B2B" stroke-width="2" />
+                            </svg>
+                        </div>
+                        <span>Избранное</span>
+                    </a>
+
                     <a class="flex fl-a-center header-link" href="#">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path fill-rule="evenodd" clip-rule="evenodd" d="M7.44444 7.05556C7.44444 6.11256 7.81905 5.20819 8.48584 4.5414C9.15264 3.8746 10.057 3.5 11 3.5C11.943 3.5 12.8474 3.8746 13.5142 4.5414C14.181 5.20819 14.5556 6.11256 14.5556 7.05556C14.5556 7.99855 14.181 8.90292 13.5142 9.56971C12.8474 10.2365 11.943 10.6111 11 10.6111C10.057 10.6111 9.15264 10.2365 8.48584 9.56971C7.81905 8.90292 7.44444 7.99855 7.44444 7.05556ZM7.44444 12.3889C6.2657 12.3889 5.13524 12.8571 4.30175 13.6906C3.46825 14.5241 3 15.6546 3 16.8333C3 17.5406 3.28095 18.2189 3.78105 18.719C4.28115 19.219 4.95942 19.5 5.66667 19.5H16.3333C17.0406 19.5 17.7189 19.219 18.219 18.719C18.719 18.2189 19 17.5406 19 16.8333C19 15.6546 18.5317 14.5241 17.6983 13.6906C16.8648 12.8571 15.7343 12.3889 14.5556 12.3889H7.44444Z" fill="#E22B2B" />
@@ -1019,6 +1035,7 @@
     <script src="assets/libs/fancybox/fancybox.umd.js"></script>
     <script src="assets/libs/nouislider/nouislider.min.js"></script>
     <script src="assets/libs/nice-select/jquery.nice-select.min.js"></script>
+    <script src="assets/libs/jquery.maskedinput.min.js"></script>
     <script src="assets/js/main.min.js"></script>
 
 </body>
