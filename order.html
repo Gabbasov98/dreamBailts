@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="assets/libs/fancybox/fancybox.css">
     <link rel="stylesheet" type="text/css" href="assets/libs/nouislider/nouislider.min.css">
     <link rel="stylesheet" type="text/css" href="assets/libs/nice-select/nice-select.css">
+    <link rel="stylesheet" type="text/css" href="assets/libs/jquery-ui/jquery-ui.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
 </head>
 
@@ -447,12 +448,14 @@
                                 2. Данные о доставке
                             </div>
                             <div class="order-step__grid">
-                                <fieldset class="fg m-select _big">
+                                <fieldset class="fg _big">
                                     <label>Ваш город<span>*</span></label>
-                                    <select name="" id="">
-                                        <option selected>Москва</option>
-                                        <option>Москва 2</option>
-                                        <option>Москва 3</option>
+                                    <!--                                    <input type="text" class="_city-select autocomplete-select">-->
+                                    <select class="autocomplete-select">
+                                        <option value="">Выбрать город</option>
+                                        <option value="ActionScript">Москва</option>
+                                        <option value="AppleScript">Казань</option>
+                                        <option value="Asp">Самара</option>
                                     </select>
                                 </fieldset>
 
@@ -501,7 +504,12 @@
 
                                 <fieldset class="fg _big _full">
                                     <label>Адрес доставки<span>*</span></label>
-                                    <input type="text">
+                                    <select class="autocomplete-select">
+                                        <option value="">Выбрать адрес</option>
+                                        <option value="ActionScript">Кремлёвская 77</option>
+                                        <option value="AppleScript">Минская 66</option>
+                                        <option value="Asp">Петербургсая 52</option>
+                                    </select>
                                 </fieldset>
                                 <fieldset class="fg _big _full">
                                     <label>Комментарий к заказу</label>
@@ -789,8 +797,20 @@
     <script src="assets/libs/nouislider/nouislider.min.js"></script>
     <script src="assets/libs/nice-select/jquery.nice-select.min.js"></script>
     <script src="assets/libs/jquery.maskedinput.min.js"></script>
+    <script src="assets/libs/jquery-ui/jquery-ui.js"></script>
     <script src="assets/js/main.min.js"></script>
 
+    <!--    <script>-->
+    <!--        let tags = [ "c++", "java", "php", "coldfusion", "javascript", "asp", "ruby" ];-->
+    <!--        $( "._city-select" ).autocomplete({-->
+    <!--            source: function( request, response ) {-->
+    <!--                var matcher = new RegExp( "^" + $.ui.autocomplete.escapeRegex( request.term ), "i" );-->
+    <!--                response( $.grep( tags, function( item ){-->
+    <!--                    return matcher.test( item );-->
+    <!--                }) );-->
+    <!--            }-->
+    <!--        });-->
+    <!--    </script>-->
 </body>
 
 </html>
